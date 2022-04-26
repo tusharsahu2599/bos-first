@@ -1,0 +1,81 @@
+{
+  "hotels": [
+    {
+      "id": "1",
+      "name": "Hotel 1",
+      "city": "London",
+      "address": "221B Baker Street",
+      "capacity": "5",
+      "cost_per_day": "500",
+      "verified": "true",
+      "rating": "4.5",
+      "img": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+      "id": "2",
+      "name": "Hotel 2",
+      "city": "London",
+      "address": "221B Baker Street",
+      "capacity": "5",
+      "cost_per_day": "500",
+      "verified": "true",
+      "rating": "4.5",
+      "img": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+      "id": "3",
+      "name": "Hotel 3",
+      "city": "London",
+      "address": "221B Baker Street",
+      "capacity": "5",
+      "cost_per_day": "500",
+      "verified": "true",
+      "rating": "4.5",
+      "img": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+      "id": "4",
+      "name": "Hotel 4",
+      "city": "London",
+      "address": "221B Baker Street",
+      "capacity": "5",
+      "cost_per_day": "500",
+      "verified": "true",
+      "rating": "4.5",
+      "img": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+      "id": "5",
+      "name": "Hotel 5",
+      "city": "London",
+      "address": "221B Baker Street",
+      "capacity": "5",
+      "cost_per_day": "500",
+      "verified": "true",
+      "rating": "4.5",
+      "img": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+      "id": "6",
+      "name": "Hotel 6",
+      "city": "London",
+      "address": "221B Baker Street",
+      "capacity": "5",
+      "cost_per_day": "500",
+      "verified": "true",
+      "rating": "4.5",
+      "img": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+    },
+    {
+        "id": "7",
+      "name": "Hotel hawana",
+      "city": "Rajnandgaon",
+      "address": "near bus stop",
+      "capacity": "10",
+      "cost_per_day": "2000",
+      "verified": false,
+      "rating": "4.5",
+      "img": "fef"
+    }
+  ]
+}
