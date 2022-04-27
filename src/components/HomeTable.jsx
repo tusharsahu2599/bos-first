@@ -1,10 +1,11 @@
 import React,{useState, useEffect} from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function HomeTable() {
 
     const [rowdata, setrowdata] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         axios.get('http://localhost:5000/hotels').
@@ -14,6 +15,11 @@ function HomeTable() {
                 console.log(err);
             });
     }, []);
+
+    const handleClick = (id) => {
+        navigate(`/hotels/${id}`);
+    }
+
 
   return (
     <div>
@@ -84,13 +90,14 @@ function HomeTable() {
 
         </div>
         <div>
-            <table
+            <table border="2" cellSpacing="0" cellPadding="10" 
             style=
             {{
                 width: '100%',
                 borderCollapse: 'collapse',
                 border: '1px solid #ccc',
-                fontFamily: 'Helvetica'
+                fontFamily: 'Helvetica',
+                textAlign: 'center'
             }}
             >
                 <thead
@@ -127,35 +134,30 @@ function HomeTable() {
                 }}
                 >
                     {rowdata.map((row,id) => (
-                        // <Link
-                        // to={`/hotels/${row.id}`}
-                        //  >
-                        <tr key={id}
+                        
+                        <tr
+                        onClick={() => {
+                            handleClick(row.id);
+                        }}
+                        key={id}
                         style={{
                             border: '1px solid #ccc',
-                            padding: '20px',
-                            fontFamily: 'Helvetica'
+                            cursor: 'pointer',
                         }}
+                        
                         >
+                            <td>{row.id}</td>
+                            {/* <Link to={`/hotels/${row.id}`}> */}
                             <td
                             style={{
-                                border: '1px solid #ccc',
-                                padding: '20px',
-                                fontFamily: 'Helvetica'
-                            }}
-                            >{row.id}</td>
-                            <Link to={`/hotels/${row.id}`}>
-                            <td
-                            style={{
-                                border: '1px solid #ccc',
-                                padding: '20px',
                                 fontFamily: 'Helvetica',
-                                textDecoration: 'none',
+                                fontSize: '18px',
+                                borderBottom: '1px solid #ccc',
                                 color: '#000',
-                                fontWeight: 'bold'
+                                textDecoration: 'none',
                             }}
                             >{row.name}</td>
-                            </Link>
+                            {/* </Link> */}
                             <td>{row.city}</td>
                             <td>{row.address}</td>
                             <td>{row.capacity}</td>

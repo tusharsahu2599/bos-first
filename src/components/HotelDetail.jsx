@@ -43,7 +43,7 @@ function HotelDetail() {
                 fontSize: '14px',
                 fontFamily: 'Helvetica'
             }}>
-                <img src={hotel.image} alt="hotel" style={{width: '100%', height: '100%'}}/>
+                <img src={hotel.img} alt="hotel" style={{width: '100%', height: '100%'}}/>
             </div>
 
             <div style={{
@@ -55,18 +55,16 @@ function HotelDetail() {
                 fontSize: '14px',
                 fontFamily: 'Helvetica'
             }}>
-                <img>{hotel.image}</img>
                 <h1>{hotel.name}</h1>
-                <p>{hotel.description}</p>
                 <p>{hotel.address}</p>
-                <p>{hotel.city}</p>
+                <h2>{hotel.city}</h2>
                 <p>{hotel.verified}</p>
-                <p>{hotel.cost}</p>
-                <p>{hotel.rating}</p>
+                <h2>{hotel.cost_per_day}/-</h2>
+                <p>{hotel.rating}🌟</p>
             </div>
         </div>
     </div>
   )
 }
 
-export default HotelDetail
+export default HotelDetail;
