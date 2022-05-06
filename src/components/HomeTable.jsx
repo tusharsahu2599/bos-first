@@ -17,7 +17,7 @@ function HomeTable() {
     }, []);
 
     const handleClick = (id) => {
-        navigate(`/hotels/${id}`);
+        navigate(`/listing/${id}`);
     }
 
 
@@ -170,7 +170,7 @@ function HomeTable() {
             </table>
         </div>
         <div>
-        <Link to="/hotels/create">
+        <Link to="/listing/create">
             <button
             style={{
                 width: '100%',
